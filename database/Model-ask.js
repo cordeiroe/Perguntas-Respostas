@@ -14,12 +14,6 @@ const Pergunta = connection.define('perguntas',{
     }
 });
 
-Pergunta.sync({force: false})
-    .then(()=>{
-        console.log("Tabela criada");
-    })
-    .catch((err)=> {
-        console.log(err);
-    });
+Pergunta.sync({force: false}).then(()=>{});
 
- 
+ module.exports = Pergunta;

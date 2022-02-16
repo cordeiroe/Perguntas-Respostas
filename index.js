@@ -1,17 +1,17 @@
+
 //Declaração das constantes a serem usadas no projeto
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const connection = require("./database/database");
 const askModel = require("./database/Model-ask");
+const Pergunta = require("./database/Model-ask");
 
 //Conexão do db
 connection
     .authenticate()
     .then(()=> { //SE a autenticação for verdadeira, o código a ser realizado é este
-
         console.log("Conexão realizada com o DB");
-
     })
     .catch((err)=> { //SE houver algum erro na autenticação, o código a ser realziado é este 
 
@@ -36,14 +36,21 @@ app.get("/", (req, res) =>{
 
 app.get("/perguntar", (req,res) => {
     
-    res.render("ask-page");
+    res.render("perguntar");
 
 })
 
 app.post("/salvarpergunta", (req, res) => {
-    var title = req.body.title;
-    var description = req.body.description;
-    res.send("Formulário Recebido! Titulo: "+ title + " " + " descrição: " + description);
+    var titulo = req.body.titulo;
+    var descricao = req.body.descricao;
+    Pergunta.create({
+
+        titulo: titulo,
+        descricao: descricao
+
+    }).then(()=> {
+        res.redirect("/");
+    });
 
 });
 
