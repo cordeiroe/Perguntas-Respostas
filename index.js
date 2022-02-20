@@ -41,8 +41,8 @@ app.get("/perguntar", (req,res) => {
 })
 
 app.post("/salvarpergunta", (req, res) => {
-    var titulo = req.body.titulo;
-    var descricao = req.body.descricao;
+    let titulo = req.body.titulo;
+    let descricao = req.body.descricao;
     Pergunta.create({
 
         titulo: titulo,
