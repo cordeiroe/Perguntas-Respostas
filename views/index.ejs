@@ -1,7 +1,40 @@
 <%- include ('partials/header.ejs')%>
 <%- include ('partials/navbar.ejs')%>
 <body>
-    <h1> Teste do bootstrap</h1>
+    
+    <div class = "container">
+
+        <hr>
+        <h1>Perguntas</h1>
+        <a href="/perguntar" class="btn btn-dark">Perguntar!</a>
+        <hr>        
+        <br>
+        <% perguntas.forEach(pergunta=> { %>
+
+            <br>
+            <div class="card">
+                <div class="card-body">
+
+                    <h3><%= pergunta.titulo %></h3>
+
+                </div>
+
+                
+                <div class="card-footer">
+
+                    <textarea placeholder="Responda" class="form-control" name="resposta"></textarea>
+                    <br>    
+                    <button class="btn btn-dark">Responder</button>
+
+                </div>
+
+            </div>
+
+
+        <% }) %>
+
+        <br>
+    </div>
     
 
 </body>

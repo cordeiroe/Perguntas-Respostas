@@ -29,8 +29,17 @@ app.use(bodyParser.json());
 
 //Rotas
 app.get("/", (req, res) =>{
-   
-    res.render("index");
+
+   Pergunta.findAll({ raw: true, order: [['createdAt', 'ASC']]}).then(perguntas => {
+
+        res.render("index", {
+
+            perguntas: perguntas
+
+        });
+
+   });
+
 
 });
 
