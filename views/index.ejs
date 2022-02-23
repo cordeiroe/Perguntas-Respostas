@@ -6,7 +6,7 @@
 
         <hr>
         <h1>Perguntas</h1>
-        <a href="/perguntar" class="btn btn-dark">Perguntar!</a>
+        <a href="/perguntar" class="btn btn-dark btn-sm">Perguntar!</a>
         <hr>        
         <br>
         <% perguntas.forEach(pergunta=> { %>
@@ -15,17 +15,12 @@
             <div class="card">
                 <div class="card-body">
 
-                    <h3><%= pergunta.titulo %></h3>
+                    <h4><%= pergunta.titulo %></h3>
 
                 </div>
 
-                
                 <div class="card-footer">
-
-                    <textarea placeholder="Responda" class="form-control" name="resposta"></textarea>
-                    <br>    
-                    <button class="btn btn-dark">Responder</button>
-
+                    <a href="/pergunta/<%= pergunta.id %>"><button class="btn btn-dark btn-sm">Responder</button></a>
                 </div>
 
             </div>

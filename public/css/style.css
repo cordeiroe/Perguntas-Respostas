@@ -5,3 +5,12 @@ body{
 #ask-form{
     margin-top: 2vh;
 }
+
+p.timestamp {
+    font-size: 8px;
+    text-align: right;
+}
+
+p.timestampQuestion{
+    font-size: 10px;
+}
