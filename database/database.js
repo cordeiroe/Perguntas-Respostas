@@ -3,8 +3,10 @@ const Sequelize = require("sequelize");
 const connection = new Sequelize('guia_perguntas', 'root', 'root',{
 
     host: 'localhost',
-    dialect: 'mysql'
+    dialect: 'mysql',
+    logging: false
+    
 
 })
 
-module.exports = connection;
+module.exports = connection; 

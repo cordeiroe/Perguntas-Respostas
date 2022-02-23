@@ -6,6 +6,7 @@ const bodyParser = require("body-parser");
 const connection = require("./database/database");
 const Pergunta = require("./database/Model-ask");
 const Resposta = require("./database/Resposta");
+const PORT = 3030;
 
 //Conexão do db
 connection
@@ -116,8 +117,9 @@ app.post("/responder", (req, res) =>{
     
 });
 
-app.listen(3000, () =>{
+app.listen(PORT, () =>{
 
     console.log("Server on");
+    console.log("Server iniciou na porta: " + PORT);
 
 });
