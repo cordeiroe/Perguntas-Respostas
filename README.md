@@ -21,7 +21,7 @@ Projeto desenvolvido com base no primeiro modulo do curso Formação Node.JS (Cl
 
 - Para utilizar é necessário clonar ou realizar o download do mesmo para seu ambiente de desenvolvimento.
 
-Por padrão a aplicação irá rodar no link localhost:3030, havendo a possibilidade de rodar a mesma em outra porta realizando a troca da porta no arquivo index.js na constante PORT
+Por padrão a aplicação irá rodar no link localhost:3030, havendo a possibilidade de rodar a mesma em outra porta realizando a troca da porta no arquivo index.js na constante PORT:
 
 ```
 
@@ -29,9 +29,11 @@ Por padrão a aplicação irá rodar no link localhost:3030, havendo a possibili
 
 ```
 
-- Ter o MYSql Server instalado para criação da database e tabelas
+- Ter o MYSql Server instalado para criação da database e tabelas;
 
-- Rodar a aplicação no CMD usando o comando 
+- Ter o NodeJS instalado no computador;
+
+- Rodar a aplicação no CMD usando o comando:
 
 ```
 
