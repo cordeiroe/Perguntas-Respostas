@@ -1,20 +1,43 @@
-<img src="/public/img/readme-repository/tela-principal.png" alt="Tela inicial">
-
 # Portal de perguntas e Respostas
+
+<img src="/public/img/readme-repository/tela-principal.png" alt="Tela inicial" width="400" height="400">
 
 Projeto desenvolvido com base no primeiro modulo do curso Formação Node.JS (Click no badge direciona para o curso)
 
 [![UDEMY](https://img.shields.io/badge/Udemy-A435F0?style=for-the-badge&logo=Udemy&logoColor=white)](https://www.udemy.com/course/formacao-nodejs/)
 
-## 🔧 Funçoes (opcional)
+## 🔧 Funçoes
 
 ### Post de pergunta:
 - Tela para postagem de uma pergunta
-<img src="/public/img/readme-repository/realizar-pergunta.png" alt="Tela de pergunta">
+<img src="/public/img/readme-repository/realizar-pergunta.png" alt="Tela de pergunta" width="400" height="400">
 
 ### Respostas da pergunta:
 - Espaço para postagem de resposta para o questionamento
-<img src="/public/img/readme-repository/postar-resposta.png" alt="Tela de resposta">
+<img src="/public/img/readme-repository/postar-resposta.png" alt="Tela de resposta" width="400" height="400">
+
+
+## 💻 Como usar: 
+
+- Para utilizar é necessário clonar ou realizar o download do mesmo para seu ambiente de desenvolvimento.
+
+Por padrão a aplicação irá rodar no link localhost:3030, havendo a possibilidade de rodar a mesma em outra porta realizando a troca da porta no arquivo index.js na constante PORT
+
+```
+
+    const PORT = 3030;
+
+```
+
+- Ter o MYSql Server instalado para criação da database e tabelas
+
+- Rodar a aplicação no CMD usando o comando 
+
+```
+    node index.js
+
+```
+
 
 ## Feito Com:
 [![IDE](https://img.shields.io/badge/Visual_studio_code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)](https://code.visualstudio.com/)
