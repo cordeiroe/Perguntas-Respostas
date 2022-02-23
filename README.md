@@ -35,9 +35,11 @@ Por padrão a aplicação irá rodar no link localhost:3030, havendo a possibili
 
 ```
 
-    ndoe index.js
+    node index.js
 
 ```
+
+E acessar o endereço localhost:PORT.
 
 
 ## Feito Com:
