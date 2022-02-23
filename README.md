@@ -1,4 +1,4 @@
-<img src="/public/img/readme-repository/tela-principal.png" alt="exemplo imagem">
+<img src="/public/img/readme-repository/tela-principal.png" alt="Tela inicial" width=200px>
 
 # Portal de perguntas e Respostas
 
@@ -8,11 +8,11 @@ Projeto desenvolvido com base no primeiro modulo do curso Formação Node.JS
 
 ### Post de pergunta:
 - Tela para postagem de uma pergunta
-<img src="/public/img/readme-repository/postar-pergunta.png" alt="exemplo imagem">
+<img src="/public/img/readme-repository/realizar-pergunta.png" alt="Tela de pergunta">
 
 ### Respostas da pergunta:
 - Espaço para postagem de resposta para o questionamento
-<img src="/public/img/readme-repository/realizar-pergunta.png" alt="exemplo imagem">
+<img src="/public/img/readme-repository/realizar-resposta.png" alt="Tela de resposta">
 
 ## Feito Com:
 [![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://www.microsoft.com/pt-br/windows/get-windows-10)
